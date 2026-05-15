@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@plugin "daisyui" {
+  themes: minimaltext --default;
+}
+
+@theme {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-footer: #0d0d0d;
+  --color-text-primary: #ffffff;
+  --color-accent: #4ade80;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+  }
+}
